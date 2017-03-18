@@ -51,8 +51,28 @@ let smartClosure: () -> () = { [c, d] in
 }
 
 smartClosure()
+print("Cool, bruh")
+
+
+c = 6
+d = 9
+
+smartClosure() // 0 0
+print("Not changed, bruh")
+
+
 
 //: Solve the Problem
+//var smartClosureArray: [() -> ()] = []
+//var j = 0
+//
+//for _ in 1...5 {
+//  smartClosureArray.append { [j] in
+//    print(j)
+//  }
+//  j += 1
+//}
+
 var smartClosureArray: [() -> ()] = []
 var j = 0
 
@@ -63,28 +83,12 @@ for _ in 1...5 {
   j += 1
 }
 
+
 smartClosureArray[0]() // 1 ☝️
 smartClosureArray[1]() // 2 💪
 smartClosureArray[2]() // 3 🎁
 smartClosureArray[3]() // 4 🎉
 smartClosureArray[4]() // 5 🎅
-
-
-
-
-
-// The self expression is an explicit reference to the current type or instance of the type in which it occurs. It has the following forms:
-
-
-String.self
-a.self
-// The first form evaluates to the value of the expression. For example, x.self evaluates to x.
-
-// The second form evaluates to the value of the type. Use this form to access a type as a value. For example, because SomeClass.self evaluates to the SomeClass type itself, you can pass it to a function or method that accepts a type-level argument.
-
-print(closure.self)
-Int.self
-
 
 
 
