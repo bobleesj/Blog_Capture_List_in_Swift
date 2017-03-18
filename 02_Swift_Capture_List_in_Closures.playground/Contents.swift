@@ -32,6 +32,7 @@ for _ in 1...5 {
   i += 1
 }
 
+
 closureArray[0]() // 5 😲
 closureArray[1]() // 5 🤔
 closureArray[2]() // 5 😨
@@ -84,11 +85,11 @@ for _ in 1...5 {
 }
 
 
-smartClosureArray[0]() // 1 ☝️
-smartClosureArray[1]() // 2 💪
-smartClosureArray[2]() // 3 🎁
-smartClosureArray[3]() // 4 🎉
-smartClosureArray[4]() // 5 🎅
+smartClosureArray[0]() // 0 ☝️
+smartClosureArray[1]() // 1 💪
+smartClosureArray[2]() // 2 🎁
+smartClosureArray[3]() // 3 🎉
+smartClosureArray[4]() // 4 🎅
 
 
 
